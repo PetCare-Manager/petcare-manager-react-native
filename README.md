@@ -12,7 +12,7 @@ Otra funcionalidad interesante que podría integrarse es un "tracker de cacas". 
 - Almacenamiento de fotos y documentos relacionados con la salud del perro.
 - Interfaz de usuario amigable y responsiva.
 
-  ## Contribuciones
+## Contribuciones
 Las contribuciones son bienvenidas. Si deseas contribuir, por favor abre un issue o envía un pull request.
 
 ## Licencia
@@ -37,7 +37,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 2. Start the app
 
    ```bash
-    npx expo start
+    npm run start
    ```
 
 In the output, you'll find options to open the app in a
