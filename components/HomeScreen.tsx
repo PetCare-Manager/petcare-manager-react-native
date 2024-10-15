@@ -5,7 +5,7 @@ import logo from "@/assets/images/logo.png";
 export const HomeScreen = () => {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      {/* <Image source={logo} className="w-48 h-32 mb-8 object-contain" /> */}
+      <Image source={logo} className="!w-[160px] !h-[220px] mb-8" />
       <View className="w-full px-6">
         <Text className="text-3xl font-bold text-blue-500 mb-8">
           PetCare Manager
