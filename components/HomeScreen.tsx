@@ -1,35 +1,15 @@
 import React from "react";
 import { Image, View, Text, TextInput, TouchableOpacity } from "react-native";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/images/logo.png";
 
 export const HomeScreen = () => {
-  const Logo = () => {
-    return (
-      <Image
-        source={logo}
-        resizeMode="contain"
-        className=" w-48 h-32 mb-8 object-contain"
-      />
-    );
-  };
-
   return (
     <View className="flex-1 items-center justify-center bg-white">
+      {/* <Image source={logo} className="w-48 h-32 mb-8 object-contain" /> */}
       <View className="w-full px-6">
-        <Logo />
-
-        <Text
-          className="text-3xl font-bold text-blue-500 mb-8"
-          style={{ fontFamily: "AfacadSmibold" }}
-        >
+        <Text className="text-3xl font-bold text-blue-500 mb-8">
           PetCare Manager
         </Text>
-
-        {/* Mensaje de bienvenida */}
-        <Text className="text-xl text-gray-600 mb-8">
-          Bienvenido a PetCare Manager
-        </Text>
-
         {/* Inputs para registro */}
         <TextInput
           placeholder="Correo electrónico"
@@ -41,12 +21,10 @@ export const HomeScreen = () => {
           secureTextEntry={true}
           className="border border-gray-300 rounded-lg py-2 px-4 mb-8 w-full"
         />
-
         {/* Botones de registro */}
         <TouchableOpacity className="bg-blue-500 rounded-lg py-2 px-4 mb-4 w-full items-center justify-center">
           <Text className="text-white">Registrar</Text>
         </TouchableOpacity>
-
         {/* Botones de redes sociales */}
         <TouchableOpacity className="bg-red-500 rounded-lg py-2 px-4 mb-4 w-full items-center justify-center">
           <Text className="text-white">Google</Text>
