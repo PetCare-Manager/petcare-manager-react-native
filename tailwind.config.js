@@ -6,7 +6,16 @@ module.exports = {
   ],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "afacad-regular": ["AfacadFlux-Regular"],
+        "afacad-semibold": ["AfacadFlux-SemiBold"],
+        "raleway-extralight": ["Raleway-ExtraLight"],
+        "raleway-light": ["Raleway-Light"],
+        "raleway-regular": ["Raleway-Regular"],
+        "raleway-medium": ["Raleway-Medium"],
+      },
+    },
   },
   plugins: [],
 }

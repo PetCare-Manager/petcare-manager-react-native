@@ -16,11 +16,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     <View className="flex-1 items-center justify-center bg-white">
       <Image source={logo} className="!w-[160px] !h-[220px] mb-8" />
       <View className="w-full px-6">
-        <Text className="text-3xl font-bold text-center text-gray-800 mb-8">
+        <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
           PetCare Manager
         </Text>
 
-        <Text className="text-l text-center text-gray-800 mb-28">
+        <Text className="font-raleway-regular text-l text-center text-gray-800 mb-28">
           Lleva todo lo que necesitas en el bolsillo
         </Text>
 
