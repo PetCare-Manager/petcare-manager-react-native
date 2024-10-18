@@ -1,8 +1,17 @@
 import React from "react";
 import { Image, View, Text, TouchableOpacity } from "react-native";
 import logo from "@/assets/images/logo.png";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
-export const HomeScreen = () => {
+type RootStackParamList = {
+  Home: undefined;
+  Register: undefined;
+  Login: undefined;
+};
+
+type HomeScreenProps = NativeStackScreenProps<RootStackParamList, "Home">;
+
+export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   return (
     <View className="flex-1 items-center justify-center bg-white">
       <Image source={logo} className="!w-[160px] !h-[220px] mb-8" />
@@ -17,11 +26,17 @@ export const HomeScreen = () => {
 
         {/* Contenedor para los botones en fila */}
         <View className="flex-row justify-between mb-4">
-          <TouchableOpacity className="bg-white rounded-lg border border-indigo-500  py-2 px-4 flex-1 mr-2 items-center justify-center">
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Register")}
+            className="bg-white rounded-lg border border-indigo-500 py-2 px-4 flex-1 mr-2 items-center justify-center"
+          >
             <Text className="text-indigo-500">Registro</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity className="bg-indigo-500 rounded-lg py-2 px-4 flex-1 ml-2 items-center justify-center">
+          <TouchableOpacity
+            onPress={() => navigation.navigate("Login")}
+            className="bg-indigo-500 rounded-lg py-2 px-4 flex-1 ml-2 items-center justify-center"
+          >
             <Text className="text-white">Login</Text>
           </TouchableOpacity>
         </View>
