@@ -24,7 +24,14 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    "AfacadFlux-Regular": require('../assets/fonts/AfacadFlux-Regular.ttf'),
+    "AfacadFlux-SemiBold": require('../assets/fonts/AfacadFlux-SemiBold.ttf'),
+    "Raleway-ExtraLight": require('../assets/fonts/Raleway-ExtraLight.ttf'),
+    "Raleway-Light": require('../assets/fonts/Raleway-Light.ttf'),
+    "Raleway-Regular": require('../assets/fonts/Raleway-Regular.ttf'),
+    "Raleway-Medium": require('../assets/fonts/Raleway-Medium.ttf'),
+
+    // SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     ...FontAwesome.font,
   });
 
