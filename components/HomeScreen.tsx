@@ -7,6 +7,7 @@ type RootStackParamList = {
   Home: undefined;
   Register: undefined;
   Login: undefined;
+  UserProfile: undefined;
 };
 
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, "Home">;
@@ -34,7 +35,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           </TouchableOpacity>
 
           <TouchableOpacity
-            onPress={() => navigation.navigate("Login")}
+            onPress={() => navigation.navigate("UserProfile")} //cambio esto para ver mi pantalla de user
             className="bg-indigo-500 rounded-lg py-2 px-4 flex-1 ml-2 items-center justify-center"
           >
             <Text className="text-white">Login</Text>

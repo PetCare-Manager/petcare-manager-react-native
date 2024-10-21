@@ -3,12 +3,14 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { HomeScreen } from "@/components/HomeScreen";
 import { Login } from "@/components/Login";
 import { Register } from "@/components/Register";
+import { UserProfile } from "@/components/UserProfile";
 
 // Define el tipo para las rutas de navegación
 type RootStackParamList = {
   Home: undefined;
   Register: undefined;
   Login: undefined;
+  UserProfile: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -29,6 +31,11 @@ export default function Home() {
       <Stack.Screen
         name="Login"
         component={Login}
+        options={{ headerShown: true, headerTitle: "" }}
+      />
+      <Stack.Screen
+        name="UserProfile"
+        component={UserProfile}
         options={{ headerShown: true, headerTitle: "" }}
       />
     </Stack.Navigator>
