@@ -22,7 +22,7 @@ export const UserProfile = () => {
                 </Text>
             </View>
             <View>
-                <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
+                <Text className="font-afacad-semibold text-xl ml-2 text-start text-gray-800 mb-8">
                     Próximos eventos del mes:
                 </Text>
                 <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
