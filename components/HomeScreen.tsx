@@ -2,6 +2,7 @@ import React from "react";
 import { Image, View, Text, TouchableOpacity } from "react-native";
 import logo from "@/assets/images/logo.png";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { Bubble } from "./Bubbles";
 
 type RootStackParamList = {
   Home: undefined;
@@ -15,6 +16,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   return (
     <View className="flex-1 bg-white justify-between items-center">
       <Image source={logo} className="w-68 h-52 mt-28" />
+      <Bubble type="bubble1" rotation={30} size={80} />
+      <Bubble type="bubble2" rotation={-45} size={100} />
+      <Bubble type="bubble3" rotation={90} size={120} />
       <View className="items-center">
         <View className="w-full px-10">
           <Text className="font-afacad-semibold text-4xl text-center text-slate-600 mb-8">
