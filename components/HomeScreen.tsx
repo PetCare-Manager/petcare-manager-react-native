@@ -14,20 +14,38 @@ type HomeScreenProps = NativeStackScreenProps<RootStackParamList, "Home">;
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   return (
-    <View className="flex-1 bg-white justify-between items-center">
-      <Image source={logo} className="w-68 h-52 mt-28 z-10" />
-      
-      
-      <Bubble containerClass="absolute top-0 right-0 z-0" type="bubble1" />
-      <Bubble containerClass="absolute -top-20 -left-16 z-0" type="bubble2" rotation={-45} />
-      <Bubble type="bubble3" />
-      <Bubble type="bubble4" />
-      <Bubble type="bubble5" />
+    <View className="m-auto w-[375px] h-[755px] bg-white justify-between items-center border border-red-600 p-4 relative rounded-xl shadow-lg">
+      <Image source={logo} className=" w-56 h-44 mt-44 z-10" />
 
+      <Bubble
+        containerClass="absolute -bottom-20 -right-16 z-0"
+        type="bubble1"
+        rotation={-45}
+      />
+      <Bubble
+        containerClass="absolute -top-20 -left-16 z-0"
+        type="bubble2"
+        rotation={-45}
+      />
+      <Bubble
+        containerClass="absolute top-36 right-10 z-0"
+        type="bubble3"
+        rotation={-45}
+      />
+      <Bubble
+        containerClass="absolute bottom-96 right-72 z-0"
+        type="bubble4"
+        rotation={-45}
+      />
+      <Bubble
+        containerClass="absolute bottom-32 right-80 z-0"
+        type="bubble5"
+        rotation={-60}
+      />
 
-      <View className="items-center">
+      <View className="items-center b">
         <View className="w-full px-10">
-          <Text className="font-afacad-semibold text-4xl text-center text-slate-600 mb-8">
+          <Text className="font-afacad-semibold text-3xl text-center text-slate-600 mb-8">
             PetCare Manager
           </Text>
 
