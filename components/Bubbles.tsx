@@ -9,16 +9,12 @@ import Bubble5 from "@/assets/images/bubble5.svg";
 
 interface BubbleProps {
   type: "bubble1" | "bubble2" | "bubble3" | "bubble4" | "bubble5";
-  width: number;
-  height: number;
   rotation?: number; // Rotación en grados (opcional)
-  containerClass?: any; // Las clases de tailwind para el contenedor (VIEW)
+  containerClass?: any; // Las clases de tailwind para el contenedor (<VIEW />)
 };
 
 export const Bubble: React.FC<BubbleProps> = ({
   type,
-  width=100,
-  height=100,
   rotation=0,
   containerClass,
 }) => {
@@ -46,7 +42,7 @@ export const Bubble: React.FC<BubbleProps> = ({
 
   return (
     <View className={containerClass}>
-      <SelectedBubbleComponent width={width} height={height} rotation={rotation} />
+      <SelectedBubbleComponent rotation={rotation} />
     </View>
   );
 };

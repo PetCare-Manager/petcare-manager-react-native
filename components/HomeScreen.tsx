@@ -18,11 +18,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       <Image source={logo} className="w-68 h-52 mt-28 z-10" />
       
       
-      <Bubble containerClass="absolute top-0 right-0 z-0" type="bubble1" height={200} width={200} />
-      <Bubble type="bubble2" height={100} width={100} />
-      <Bubble type="bubble3" height={100} width={100} />
-      <Bubble type="bubble4" height={100} width={100} />
-      <Bubble type="bubble5" height={100} width={100} />
+      <Bubble containerClass="absolute top-0 right-0 z-0" type="bubble1" />
+      <Bubble containerClass="absolute -top-20 -left-16 z-0" type="bubble2" rotation={-45} />
+      <Bubble type="bubble3" />
+      <Bubble type="bubble4" />
+      <Bubble type="bubble5" />
 
 
       <View className="items-center">
