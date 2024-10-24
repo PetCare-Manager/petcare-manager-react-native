@@ -2,7 +2,7 @@ import React from "react";
 import { Image, View, Text, TouchableOpacity } from "react-native";
 import logo from "@/assets/images/logo.png";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Bubble } from "./Bubbles";
+import { Bubble } from "@/components/Bubbles";
 
 type RootStackParamList = {
   Home: undefined;

@@ -1,7 +1,6 @@
 // src/components/Bubble.tsx
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import Svg, { G } from "react-native-svg";
+import { View } from "react-native";
 import Bubble1 from "@/assets/images/bubble1.svg";
 import Bubble2 from "@/assets/images/bubble2.svg";
 import Bubble3 from "@/assets/images/bubble3.svg";
@@ -23,19 +22,19 @@ export const Bubble: React.FC<BubbleProps> = ({
 
   switch (type) {
     case "bubble1":
-      BubbleComponent = Bubble1;
+      BubbleComponent = () => <Bubble1 width={size} height={size} />;
       break;
     case "bubble2":
-      BubbleComponent = Bubble2;
+      BubbleComponent = () => <Bubble2 width={size} height={size} />;
       break;
     case "bubble3":
-      BubbleComponent = Bubble3;
+      BubbleComponent = () => <Bubble3 width={size} height={size} />;
       break;
     case "bubble4":
-      BubbleComponent = Bubble4;
+      BubbleComponent = () => <Bubble4 width={size} height={size} />;
       break;
     case "bubble5":
-      BubbleComponent = Bubble5;
+      BubbleComponent = () => <Bubble5 width={size} height={size} />;
       break;
     default:
       return null;
@@ -44,26 +43,12 @@ export const Bubble: React.FC<BubbleProps> = ({
   return (
     <View
       style={[
-        styles.container,
-        {
-          transform: [{ rotate: `${rotation}deg` }],
-          width: size,
-          height: size,
-        },
+        { transform: [{ rotate: `${rotation}deg` }] },
+        { width: size, height: size },
       ]}
+      className="justify-center items-center"
     >
-      <Svg width="100%" height="100%">
-        <G>
-          <BubbleComponent width="100%" height="100%" />
-        </G>
-      </Svg>
+      {BubbleComponent && <BubbleComponent />}
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
