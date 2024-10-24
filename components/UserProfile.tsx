@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import { Layout } from "@ui-kitten/components";
+import { BottomTabs } from "./BottomTabs";
 
 export const UserProfile = () => {
     return (
@@ -30,9 +31,7 @@ export const UserProfile = () => {
                     PetEvents x3
                 </Text>
                 <Layout>
-                    <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
-                        Bottom Tabs
-                    </Text>
+                    <BottomTabs />
                 </Layout>
             </View>
         </View>
