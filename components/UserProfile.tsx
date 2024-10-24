@@ -1,11 +1,7 @@
 import React from "react";
 import { Image, Text, View } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-<<<<<<< HEAD
-import { Layout } from "@ui-kitten/components";
 import { BottomTabs } from "./BottomTabs";
-=======
->>>>>>> parent of 6228a6f (installing ui kitten components)
 
 export const UserProfile = () => {
     return (
@@ -33,13 +29,8 @@ export const UserProfile = () => {
                 <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
                     PetEvents x3
                 </Text>
-<<<<<<< HEAD
-                <Layout>
-                    <BottomTabs />
-                </Layout>
-=======
->>>>>>> parent of 6228a6f (installing ui kitten components)
             </View>
+            <BottomTabs />
         </View>
     );
 };
