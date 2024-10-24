@@ -1,6 +1,7 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
+import { Layout } from "@ui-kitten/components";
 
 export const UserProfile = () => {
     return (
@@ -28,6 +29,11 @@ export const UserProfile = () => {
                 <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
                     PetEvents x3
                 </Text>
+                <Layout>
+                    <Text className="font-afacad-semibold text-3xl text-center text-gray-800 mb-8">
+                        Bottom Tabs
+                    </Text>
+                </Layout>
             </View>
         </View>
     );
